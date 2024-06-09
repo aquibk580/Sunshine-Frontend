@@ -8,6 +8,7 @@ import featured8 from "../Images/Featured/featured-8.jpg";
 import featured9 from "../Images/Featured/featured-9.jpg";
 import featured10 from "../Images/Featured/featured-10.jpg";
 import packagebg from "../Images/package-bg.png";
+import { Link } from "react-router-dom";
 
 const InterrnationalPackages = () => {
     const InternationalCardData = [
@@ -18,6 +19,7 @@ const InterrnationalPackages = () => {
           cinfo: "Culture fusion,vibrant Cities, lush nature, and tropical allure.",
           crating: "4.8",
           package: "06 Nights / 07 Days",
+          path:"/packages/international/malasiya"
         },
         {
           id: 2,
@@ -26,6 +28,7 @@ const InterrnationalPackages = () => {
           cinfo: 'It is often called as "Land of The Rising Sun".',
           crating: "4.8",
           package: "08 Nights / 09 Days",
+          path:"/packages/international/japan"
         },
         {
           id: 3,
@@ -34,6 +37,7 @@ const InterrnationalPackages = () => {
           cinfo: "Explore Australias aquatic and coastal experiences.",
           crating: "4.8",
           package: "12 Nights / 13 Days",
+          path:"/packages/international/australi"
         },
         {
           id: 4,
@@ -42,6 +46,7 @@ const InterrnationalPackages = () => {
           cinfo: "Explore a Diverse and expansive Terrain.",
           crating: "4.8",
           package: "05 Nights / 06 Days",
+          path:"/packages/international/kenya"
         },
         {
           id: 5,
@@ -50,6 +55,7 @@ const InterrnationalPackages = () => {
           cinfo: "Has one of the longest Hsitories of any modern country.",
           crating: "4.8",
           package: "08 Nights / 09 Days",
+          path:"/packages/international/egypt"
         },
         {
           id: 6,
@@ -58,6 +64,7 @@ const InterrnationalPackages = () => {
           cinfo: "Rich Histroy art, and cuisine amidst stunning landscapes.",
           crating: "4.8",
           package: "09 Nights / 10 Days",
+          path:"/packages/international/japan/italy"
         },
       ];
       const responsive = {
@@ -118,6 +125,7 @@ const InterrnationalPackages = () => {
                   className="max-w-fit ml-[2px] sm:mx-3 my-10 relative bg-white border border-gray-200 shadow dark:bg-white dark:border-white rounded-md"
                   key={item.id}
                 >
+                  <Link to={item.path}>
                   <FontAwesomeIcon
                     className="cursor-pointer text-white hover:text-orange-500 absolute right-5 top-5 z-30 text-2xl"
                     icon="fa-regular fa-heart"
@@ -150,6 +158,7 @@ const InterrnationalPackages = () => {
                     />
                     {item.crating}
                   </div>
+                  </Link>
                 </div>
               );
             })}

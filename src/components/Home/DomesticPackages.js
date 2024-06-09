@@ -9,6 +9,7 @@ import mainCard5 from "../Images/MainCards/mainCard5.jpg";
 import mainCard6 from "../Images/MainCards/mainCard6.jpg";
 import featured2 from "../Images/Featured/featured-2.jpg";
 import featured3 from "../Images/Featured/featured-3.jpg";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 const TravelPackages = () => {
@@ -21,6 +22,7 @@ const TravelPackages = () => {
       ctitle: "Madhya Pradesh",
       cinfo: `Known as the heart of India A beautiful place`,
       crating: "4.8",
+      path:"/packages/domestic/madhyaPradesh"
     },
     {
       id: 2,
@@ -29,6 +31,7 @@ const TravelPackages = () => {
       ctitle: "Arunachal Pradesh",
       cinfo: "Unrivalled astethics and diverse culture",
       crating: "4.8",
+      path:"/packages/domestic/arunachal"
     },
     {
       id: 3,
@@ -37,6 +40,7 @@ const TravelPackages = () => {
       ctitle: "Kerala",
       cinfo: "Enjoys unique geographical features",
       crating: "4.8",
+      path:"/packages/domestic/kerala"
     },
     {
       id: 4,
@@ -45,6 +49,7 @@ const TravelPackages = () => {
       ctitle: "Himachal",
       cinfo: "Famous for its abundant natural beauty.",
       crating: "4.8",
+      path:"/packages/domestic/himachal"
     },
     {
       id: 5,
@@ -53,6 +58,7 @@ const TravelPackages = () => {
       ctitle: "Uttarakhand",
       cinfo: 'Referred to as the Devbhumi "Land of the Gods"',
       crating: "4.8",
+      path:"/packages/domestic/utrakhand"
     },
     {
       id: 6,
@@ -61,6 +67,7 @@ const TravelPackages = () => {
       ctitle: "Punjab",
       cinfo: "Explore historic palaces,battle sites",
       crating: "4.8",
+      path:"/packages/domestic/punjab"
     },
   ];
   const featuredData = [
@@ -110,7 +117,7 @@ const TravelPackages = () => {
               <div
                 className="max-w-fit ml-[2px] sm:mx-3 my-10 relative bg-white border border-gray-200 shadow dark:bg-white dark:border-white rounded-md"
                 key={item.id}
-              >
+              ><Link to={item.path}>
                 <div
                   className={`absolute top-5 left-5 z-30   ${
                     item.tag === "" ? "hidden" : ""
@@ -147,6 +154,7 @@ const TravelPackages = () => {
                   />
                   {item.crating}
                 </div>
+                </Link>
               </div>
             );
           })}
