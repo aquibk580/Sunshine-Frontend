@@ -1,0 +1,13 @@
+@keyframes flip-image{
+    0% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    100% {
+        transform: perspective(400px) scaleX(-1);
+    }
+}
+
+.flipImage:hover{
+    animation: flip-image 500ms ease-in-out;
+}

@@ -1,4 +1,4 @@
-body {
+body{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,8 +6,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.kdam-thmor pro-regular{
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .list-animation{
+    @apply hover:text-orange-600 hover:underline transition-all duration-[450ms]
+  }
+  .list-animation-nav{
+    @apply hover:text-orange-600 transition-all duration-[400ms]
+  }
 }
