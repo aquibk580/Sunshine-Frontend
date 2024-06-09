@@ -106,7 +106,7 @@ const Cruise = () => {
                     src={item.img}
                     alt=""
                   />
-                  <h2 className="relative z-10 bottom-28 sm:text-3xl text-2xl font-bold mx-5 mb-2 w-[250px]">
+                  <h2 className="relative z-10 bottom-28 sm:text-3xl text-2xl font-bold mx-5 mb-2 w-[250px] hover:underline">
                     {item.head}
                   </h2>
                   <p className="relative z-10 bottom-28 text-[13px] mx-5 w-[250px]">
