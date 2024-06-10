@@ -61,7 +61,7 @@ const News = () => {
     <div style={{ backgroundImage: `url(${newsbg})`,backgroundSize:"Cover"}}>
       <div className=" flex items-center justify-center">
         <h1 className="sm:text-8xl text-3xl text-white font-bold z-20 absolute">
-          Blogs
+          News
         </h1>
         <div
           className=" relative flex flex-col w-[100%] z-0 place-items-center justify-center items-center sm:h-[450px] h-[200px] filter brightness-[.65]"
