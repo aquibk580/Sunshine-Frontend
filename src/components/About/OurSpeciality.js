@@ -30,7 +30,7 @@ const OurSpeciality = () => {
   ];
   return (
     <div
-      className="flex flex-row flex-wrap sm:flex-nowrap space-x-[150px]"
+      className="flex flex-row flex-wrap sm:flex-nowrap sm:space-x-[150px]"
       style={{ backgroundImage: `url(${cardbg})` }}
     >
       <div className=" flex flex-col space-y-2 sm:pl-24 items-center sm:items-start">

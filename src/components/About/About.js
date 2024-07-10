@@ -9,12 +9,12 @@ const About = () => {
  
   const AboutDetails = [
     {
-      number: "120",
+      number: "120K",
       section1: "Total",
       section2: "Destination",
     },
     {
-      number: "500",
+      number: "500K",
       section1: "Travel",
       section2: "Packages",
     },
@@ -45,10 +45,10 @@ const About = () => {
       </div>
       <LetsExploreAbout />
       <LetsTravelNowAbout />
-      <div className=" flex flex-row bg-[#496560] text-white sm:py-20 py-10 my-20 flex-wrap sm:flex-nowrap">
+      <div className=" flex flex-row bg-[#496560] text-white sm:py-20 py-10 my-20 flex-wrap sm:flex-nowrap justify-center">
         {AboutDetails.map((item, index) => {
           return (
-            <div className=" flex flex-row mx-20 sm:my-0 my-7" key={index}>
+            <div className=" flex flex-row mx-20 sm:my-0 my-7 sm:w-fit" key={index}>
               <h1
                 className="sm:text-6xl text-5xl font-bold"
               >
